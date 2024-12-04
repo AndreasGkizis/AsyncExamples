@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureAwait", "ConfigureAwait\ConfigureAwait.csproj", "{17BFF634-50E8-476D-BCA8-647ABE9C8386}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchMarker", "BenchMarker\BenchMarker.csproj", "{F90ABDA6-3D1F-4C91-A7E5-7E2782979047}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{17BFF634-50E8-476D-BCA8-647ABE9C8386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17BFF634-50E8-476D-BCA8-647ABE9C8386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17BFF634-50E8-476D-BCA8-647ABE9C8386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90ABDA6-3D1F-4C91-A7E5-7E2782979047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90ABDA6-3D1F-4C91-A7E5-7E2782979047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90ABDA6-3D1F-4C91-A7E5-7E2782979047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90ABDA6-3D1F-4C91-A7E5-7E2782979047}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
