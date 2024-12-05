@@ -4,12 +4,13 @@ public class Program
 {
 	static async Task Main(string[] args)
 	{
-		await ConfigureAwaitFalse();
-
+		/*
+		 This example has been made as a proof opf concept to understand what happens 
+		 when you apply ConfigureAwait() ,as it turns out almost nothing in the scope of ASP.NET Core
+		 */
 		await SimpleAwait();
-
 		await ConfigureAwaitTrue();
-		Console.WriteLine("Program Complete.");
+		await ConfigureAwaitFalse();
 	}
 
 	public static async Task<(int Task1Result, int Task2Result, int Task3Result)> ConfigureAwaitFalse()
@@ -21,7 +22,7 @@ public class Program
 		var task2 = SimulateSimpleAsyncTask(40);
 		var task3 = SimulateSimpleAsyncTask(70);
 
-		await Task.WhenAll(task1, task2, task3);
+		await Task.WhenAll(task1, task2, task3).ConfigureAwait(false);;
 
 		Console.WriteLine("{0}: [After Await] Thread ID: {1}", nameof(ConfigureAwaitFalse),
 			Thread.CurrentThread.ManagedThreadId);
